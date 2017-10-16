@@ -15,7 +15,6 @@ Wakasa.shapesize(5)
 Wakasa.pensize(6)
 Wakasa.speed(10)
 
-
 Momo.shape("turtle")
 Momo.color("turquoise")
 Momo.shapesize(5)
@@ -28,17 +27,35 @@ Kassie.shapesize(5)
 Kassie.pensize(8)
 Kassie.speed(10)
 
+Peter.shape("turtle")
+Peter.color("dark green")
+Peter.shapesize(7)
+Peter.pensize(3)
+Peter.speed(10)
+
+Lambert.shape("turtle")
+Lambert.color("blue4")
+Lambert.shapesize(1)
+Lambert.pensize(10)
+Lambert.speed(10)
+
+
 for i in range(25):
-    Kassie.fd(50)
-    Kassie.rt(50)
-    Momo.lt(80)
-    Wakasa.lt(10)
-    Wakasa.fd(40)
-    Momo.fd(180)
-    Peter.fd(90)
-    Lambert.lt(9)
-    Peter.fd(60)
-    Lambert.fd(88)
+    while True:
+        Kassie.fd(50)
+        Kassie.rt(50)
+        Momo.lt(80)
+        Wakasa.lt(10)
+        Wakasa.fd(40)
+        Momo.fd(180)
+        Peter.fd(90)
+        Peter.lt(70)
+        Lambert.lt(90)
+        Peter.fd(60)
+        Lambert.fd(80)
+        if abs(pos()) < 1:
+            break
+    
 
 
 
