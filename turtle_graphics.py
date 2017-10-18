@@ -17,22 +17,19 @@ def left_key():
 def back():
     Luna.back(5)
 
-def pen_up():
-    Luna.penup()
+def pen():
+    if input("Enter"):
+        Luna.penup()
 
-def pen_down():
-    Luna.pendown()
-
-if input("Enter"):
-    Luna.penup
-
-if input("Tab"):
-    Luna.pendown
+    if input("Tab"):
+        Luna.pendown()
 
 onkeypress(forward, "Up")
 onkeypress(right_key, "Right")
 onkeypress(left_key, "Left")
 onkeypress(back, "Down")
+onkeypress(
+onkeypress(
 
 
 
