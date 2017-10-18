@@ -1,22 +1,40 @@
 from turtle import *
-
+setup(500, 500)
+Screen()
 Luna = Turtle()
-Luna = Turtle()
-
+showturtle()
+Luna.pensize(10)
 
 def forward():
-    move.forward(5)
+    Luna.forward(5)
 
 def right_key():
-    mover.right(5)
+    Luna.right(5)
 
 def left_key():
-    move.left(5)
+    Luna.left(5)
 
 def back():
-    move.back(5)
+    Luna.back(5)
+
+def pen_up():
+    Luna.penup()
+
+def pen_down():
+    Luna.pendown()
+
+if input("Enter"):
+    Luna.penup
+
+if input("Tab"):
+    Luna.pendown
 
 onkeypress(forward, "Up")
 onkeypress(right_key, "Right")
 onkeypress(left_key, "Left")
 onkeypress(back, "Down")
+
+
+
+listen()
+mainloop()
