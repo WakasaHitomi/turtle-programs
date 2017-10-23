@@ -6,51 +6,25 @@ Kassie = Turtle()
 Wakasa = Turtle()
 Saizo = Turtle()
 
-def luna_Moon(x, y, points, line, fill):
+def luna_moon(x, y, points, line, fill):
     penup()
     goto(x, y)
     pendown()
 
+    turn = 180 - (360 / points)
+
     color(line, fill)
 
     begin_fill()
-    for i in range(points):
-        lt(10)
-        fd(40)
+    for i in range(25):
+            lt(10)
+            fd(40)
+        if abs(pos()) < 1:
+            break
     end_fill()
+    done()
 
 speed(10)
 
-luna_moon(300, -200, 0, "black", "azure3"
-def Luna_Moon(x, y, points, line, fill):
-    penup()
-    goto(x, y)
-    pendown()
+luna_moon(300, -200, 1, "black", "azure3")
 
-    color(line, fill)
-
-    begin_fill()
-    for i in range(points):
-    pass
-
-def Luna_Moon(x, y, points, line, fill):
-    penup()
-    goto(x, y)
-    pendown()
-
-    color(line, fill)
-
-    begin_fill()
-    for i in range(points):
-    pass
-
-def Luna_Moon(x, y, points, line, fill):
-    penup()
-    goto(x, y)
-    pendown()
-
-    color(line, fill)
-
-    begin_fill()
-    for i in range(points):
-    pass
