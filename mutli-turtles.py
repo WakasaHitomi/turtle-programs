@@ -53,9 +53,9 @@ for i in range(25):
         Lambert.lt(90)
         Peter.fd(60)
         Lambert.fd(80)
-        if abs(pos()) < 1:
-            break
-    
+
+    if 
+        clear()
 
 
 
