@@ -1,5 +1,6 @@
 from turtle import *
-setup(500, 500)
+
+setup(1000, 1000)
 Screen()
 Luna = Turtle()
 showturtle()
@@ -72,13 +73,12 @@ speed(10)
 eye_pupil(-320, 200, 1, "cornsilk4", "honeydew4")
 eye_pupil(380, 90, 1, "cornsilk4", "blue4")
 
-done()
-
 print("Use the arrow keys to move the turtle.")
 print("")
 print("The 'd' key is pen down, while the 'u' key is to lift your pen up")
-print("")
-print("")
+print("q = black; w = red; e = blue; r = yellow; t = white")
+print("press n when you are finished drawing and you want to see a classy screen.")
+
 def forward():
     Luna.forward(5)
 
@@ -96,6 +96,75 @@ def pen():
 
 def pen_down():
     Luna.pendown()
+
+def black():
+    Luna.color("black")
+
+def blue():
+    Luna.color("blue")
+    
+def red():
+    Luna.color("red")
+    
+def white():
+    Luna.color("white")
+    
+def yellow():
+    Luna.color("yellow")
+
+def finish_screen():
+    clear()
+          
+    Wakasa = Turtle()
+    Momo = Turtle()
+    Kassie = Turtle()
+    Peter = Turtle()
+    Lambert = Turtle()
+
+    Wakasa.shape("turtle")
+    Wakasa.color("DarkOrchid1")
+    Wakasa.shapesize(5)
+    Wakasa.pensize(6)
+    Wakasa.speed(10)
+
+    Momo.shape("turtle")
+    Momo.color("turquoise")
+    Momo.shapesize(5)
+    Momo.pensize(10)
+    Momo.speed(10)
+
+    Kassie.shape("turtle")
+    Kassie.color("slate gray")
+    Kassie.shapesize(5)
+    Kassie.pensize(8)
+    Kassie.speed(10)
+
+    Peter.shape("turtle")
+    Peter.color("dark green")
+    Peter.shapesize(7)
+    Peter.pensize(3)
+    Peter.speed(10)
+
+    Lambert.shape("turtle")
+    Lambert.color("blue4")
+    Lambert.shapesize(1)
+    Lambert.pensize(10)
+    Lambert.speed(10)
+
+    for i in range(25):
+        while True:
+            Kassie.fd(50)
+            Kassie.rt(50)
+            Momo.lt(80)
+            Wakasa.lt(10)
+            Wakasa.fd(40)
+            Momo.fd(180)
+            Peter.fd(90)
+            Peter.lt(70)
+            Lambert.lt(90)
+            Peter.fd(60)
+            Lambert.fd(80)
+
    
 onkeypress(forward, "Up")
 onkeypress(right_key, "Right")
@@ -103,70 +172,14 @@ onkeypress(left_key, "Left")
 onkeypress(back, "Down")
 onkeypress(pen, "u")
 onkeypress(pen_down, "d")
+onkeypress(black, "q")
+onkeypress(red, "w")
+onkeypress(blue, "e")
+onkeypress(yellow, "r")
+onkeypress(white, "t")
+onkeypress(finish_screen, "n")
 
 
 
 listen()
 mainloop()
-
-decision = input('Type "Stop" or "End" when you are finished drawing.')
-decision = decision.lower()
-
-if decision == 'stop' or decision == 'end':
-    break
-elif decision == 'done':
-    return false
-
-done()
-
-clear()
-      
-Wakasa = Turtle()
-Momo = Turtle()
-Kassie = Turtle()
-Peter = Turtle()
-Lambert = Turtle()
-
-Wakasa.shape("turtle")
-Wakasa.color("DarkOrchid1")
-Wakasa.shapesize(5)
-Wakasa.pensize(6)
-Wakasa.speed(10)
-
-Momo.shape("turtle")
-Momo.color("turquoise")
-Momo.shapesize(5)
-Momo.pensize(10)
-Momo.speed(10)
-
-Kassie.shape("turtle")
-Kassie.color("slate gray")
-Kassie.shapesize(5)
-Kassie.pensize(8)
-Kassie.speed(10)
-
-Peter.shape("turtle")
-Peter.color("dark green")
-Peter.shapesize(7)
-Peter.pensize(3)
-Peter.speed(10)
-
-Lambert.shape("turtle")
-Lambert.color("blue4")
-Lambert.shapesize(1)
-Lambert.pensize(10)
-Lambert.speed(10)
-
-for i in range(25):
-    while True:
-        Kassie.fd(50)
-        Kassie.rt(50)
-        Momo.lt(80)
-        Wakasa.lt(10)
-        Wakasa.fd(40)
-        Momo.fd(180)
-        Peter.fd(90)
-        Peter.lt(70)
-        Lambert.lt(90)
-        Peter.fd(60)
-        Lambert.fd(80)
