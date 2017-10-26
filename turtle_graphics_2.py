@@ -114,6 +114,8 @@ def yellow():
 
 def finish_screen():
     clear()
+    Luna.clear()
+    bgcolor("MediumPurple1")
           
     Wakasa = Turtle()
     Momo = Turtle()
