@@ -1,51 +1,11 @@
 from turtle import *
-
-Wakasa = Turtle()
-Momo = Turtle()
-Kassie = Turtle()
-Peter = Turtle()
-Lambert = Turtle()
-
-Momo.shape("turtle")
-Momo.color("turquoise")
-Momo.shapesize(5)
-Momo.pensize(10)
-Momo.speed(10)
-
-Kassie.shape("turtle")
-Kassie.color("slate gray")
-Kassie.shapesize(5)
-Kassie.pensize(8)
-Kassie.speed(10)
-
-Peter.shape("turtle")
-Peter.color("dark green")
-Peter.shapesize(7)
-Peter.pensize(3)
-Peter.speed(10)
-
-Lambert.shape("turtle")
-Lambert.color("blue4")
-Lambert.shapesize(1)
-Lambert.pensize(10)
-Lambert.speed(10)
-
-for i in range(25):
-    while True:
-        Kassie.fd(50)
-        Kassie.rt(50)
-        Momo.lt(80)
-        Wakasa.lt(10)
-        Wakasa.fd(40)
-        Momo.fd(180)
-        Peter.fd(90)
-        Peter.lt(70)
-        Lambert.lt(90)
-        Peter.fd(60)
-        Lambert.fd(80)
-
-clear()
-
+setup(500, 500)
+Screen()
+Luna = Turtle()
+showturtle()
+Luna.pensize(10)
+Luna.color("black")
+    
 bgcolor("peru")
 
 def outer_eye(x, y, points, line, fill):
@@ -110,5 +70,103 @@ speed(10)
 
 
 eye_pupil(-320, 200, 1, "cornsilk4", "honeydew4")
-eye_pupil(380, 90, 1, "cornsilk4", "honeydew4")
+eye_pupil(380, 90, 1, "cornsilk4", "blue4")
 
+done()
+
+print("Use the arrow keys to move the turtle.")
+print("")
+print("The 'd' key is pen down, while the 'u' key is to lift your pen up")
+print("")
+print("")
+def forward():
+    Luna.forward(5)
+
+def right_key():
+    Luna.right(5)
+
+def left_key():
+    Luna.left(5)
+
+def back():
+    Luna.back(5)
+
+def pen():
+    Luna.penup()
+
+def pen_down():
+    Luna.pendown()
+   
+onkeypress(forward, "Up")
+onkeypress(right_key, "Right")
+onkeypress(left_key, "Left")
+onkeypress(back, "Down")
+onkeypress(pen, "u")
+onkeypress(pen_down, "d")
+
+
+
+listen()
+mainloop()
+
+decision = input('Type "Stop" or "End" when you are finished drawing.')
+decision = decision.lower()
+
+if decision == 'stop' or decision == 'end':
+    break
+elif decision == 'done':
+    return false
+
+done()
+
+clear()
+      
+Wakasa = Turtle()
+Momo = Turtle()
+Kassie = Turtle()
+Peter = Turtle()
+Lambert = Turtle()
+
+Wakasa.shape("turtle")
+Wakasa.color("DarkOrchid1")
+Wakasa.shapesize(5)
+Wakasa.pensize(6)
+Wakasa.speed(10)
+
+Momo.shape("turtle")
+Momo.color("turquoise")
+Momo.shapesize(5)
+Momo.pensize(10)
+Momo.speed(10)
+
+Kassie.shape("turtle")
+Kassie.color("slate gray")
+Kassie.shapesize(5)
+Kassie.pensize(8)
+Kassie.speed(10)
+
+Peter.shape("turtle")
+Peter.color("dark green")
+Peter.shapesize(7)
+Peter.pensize(3)
+Peter.speed(10)
+
+Lambert.shape("turtle")
+Lambert.color("blue4")
+Lambert.shapesize(1)
+Lambert.pensize(10)
+Lambert.speed(10)
+
+for i in range(25):
+    while True:
+        Kassie.fd(50)
+        Kassie.rt(50)
+        Momo.lt(80)
+        Wakasa.lt(10)
+        Wakasa.fd(40)
+        Momo.fd(180)
+        Peter.fd(90)
+        Peter.lt(70)
+        Lambert.lt(90)
+        Peter.fd(60)
+        Lambert.fd(80)
