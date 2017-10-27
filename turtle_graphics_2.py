@@ -1,5 +1,6 @@
 from turtle import *
 
+screensize(3000, 3000)
 setup(1000, 1000)
 Screen()
 Luna = Turtle()
@@ -114,8 +115,6 @@ def yellow():
 
 def finish_screen():
     clear()
-    Luna.clear()
-    bgcolor("MediumPurple1")
           
     Wakasa = Turtle()
     Momo = Turtle()
